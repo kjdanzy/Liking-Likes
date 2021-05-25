@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        
+        <div class="overAllContainer">
+            <div class="headContainer">
+                <div>
+                    <h1 class="headerLine">Network</h1>
+                </div>
+                <div>
+                    <h2 class="yourFeed">Your Feed</h2>
+                </div>
+            </div>
+            <div class="bodyContainer">
+                <div class="avatarContainer">
+                    <img class="avatarResizeAndMove" src="./images/user-circle.png" alt="General User Image">
+                    <a href="#">Add an avatar</a>
+                    <div class="userName">James Doe</div>
+                </div>
+                <div class="userContainer">
+                    <div class="userTabContainer">
+                        <div class="userLikesTab">
+                            <div class="userName">Neil M.</div>
+                            <div id="numLikes1" class="numLikes">3 like(s)</div>
+                            <button id="likeButton1" class="likeButton" onclick="javascript:updateLikeCount('numLikes1'); return false;">Like</button>
+                        </div>
+                        <div>
+                            <div class="fillerText"><span >I just set up this new discord bot, let me know what you all think. <a href="#">link</a></span></div>
+                        </div>
+                    </div>
+                    <div class="userTabContainer">
+                        <div class="userLikesTab">
+                            <div class="userName">Nichole K.</div>
+                            <div id="numLikes2" class="numLikes">3 like(s)</div>
+                            <button id="likeButton2" class="likeButton" onclick="javascript:updateLikeCount('numLikes2'); return false;">Like</button>
+                        </div>
+                        <div>
+                            <div class="fillerText"><span >Just finished my <a href="#">next comic</a>, check it out</span></div>
+                        </div>
+                    </div>
+                    <div class="userTabContainer">
+                        <div class="userLikesTab">
+                            <div class="userName">Jim R.</div>
+                            <div id="numLikes3" class="numLikes">3 like(s)</div>
+                            <button id="likeButton3" class="likeButton" onclick="javascript:updateLikeCount('numLikes3'); return false;">Like</button>
+                        </div>
+                        <div class="fillerTextContainer">
+                            <div class="fillerText"><span >I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="instructionContainer">
+                    <div><img class="redTape" src="./images/pieceoftape.png" alt="Piece of Red Tape"></div>
+                    <div>
+                        <span class="instructions">Clicking each like button will increase the number of likes for each post by 1.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="jsLikes.js"></script> 
+    </body>
+</html>
